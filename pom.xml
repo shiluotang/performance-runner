@@ -94,4 +94,14 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>archiva-intranet-snapshots</id>
+            <url>http://192.168.21.213:8080/archiva/repository/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>archiva-intranet-internal</id>
+            <url>http://192.168.21.213:8080/archiva/repository/internal/</url>
+        </repository>
+    </distributionManagement>
 </project>
