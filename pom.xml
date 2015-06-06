@@ -90,8 +90,18 @@
             <plugin>
                 <groupId>external.atlassian.jgitflow</groupId>
                 <artifactId>jgitflow-maven-plugin</artifactId>
-                <version>1.0-m4.3</version>
+                <version>1.0-m5.1</version>
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>archiva-intranet-snapshots</id>
+            <url>http://192.168.21.213:8080/archiva/repository/snapshots/</url>
+        </snapshotRepository>
+        <repository>
+            <id>archiva-intranet-internal</id>
+            <url>http://192.168.21.213:8080/archiva/repository/internal/</url>
+        </repository>
+    </distributionManagement>
 </project>
